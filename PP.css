@@ -1,0 +1,162 @@
+#bdy {
+    display: flex;
+    background-color:rgb(2, 104, 2);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#formAbm {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+
+.panelDatosAlumno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+
+
+.panelTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 5px;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+
+
+.panelTextBoxes {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+}
+.textBox input {
+    border-radius: 5px;
+}
+
+
+
+.comboBox {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin: 5px;
+}
+
+
+
+.panelButtons {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-top: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.button {
+    background-color: darkgreen;
+    border-color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    height: 25px;
+    width: 100px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+
+
+#formDatos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+th, td {
+    padding: 0;
+    border: 2px solid grey;
+}
+
+#formDatos button {
+    background-color: darkgreen;
+    border-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    color: white;
+}
+
+
+
+.panelPromedio {
+    display: flex;
+    flex-direction: row;
+    width: 37%;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 5px;
+}
+.panelPromedio input {
+    border-radius: 5px;
+    width: 80px;
+}
+
+
+
+.panelCheckBoxes {
+    display: flex;
+    flex-direction: row;
+}
+.checkBox {
+    display: flex;
+    margin: 4px;
+}

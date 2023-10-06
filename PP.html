@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="PP.css">
+</head>
+<body id="bdy">
+    <div id="formAbm">
+
+        <div class="panelDatosAlumno">
+            <label>Juan Pablo, Dongo Huaman</label>
+            <label>Labo III - Div. 3°C</label>
+            <label>Primer Parcial</label>
+        </div>
+
+        <div class="panelTitulo">
+            <label>Formulario ABM</label>
+        </div>
+
+        <div class="panelTextBoxes">
+            <div class="textBox" id="divId">
+                <label>ID</label>
+                <input id="txtId" type="text" readonly>
+            </div>
+            <div class="textBox">
+                <label>Modelo</label>
+                <input id="txtModelo" type="text">
+            </div>
+            <div class="textBox">
+                <label>Año Fabricacion</label>
+                <input id="txtAnoFab" type="text">
+            </div>
+            <div class="textBox">
+                <label>Velocidad Maxima</label>
+                <input id="txtVelMax" type="text">
+            </div>
+        </div>
+
+        <div class="comboBox">
+            <label>Tipo</label>
+            <select id="comboxTipo">
+                <option value="default" selected>Seleccionar</option>
+                <option value="terrestre">Terrestre</option>
+                <option value="aereo">Aereo</option>
+            </select>
+        </div>
+
+        <div class="panelTextBoxes">
+            <div class="textBox" id="divAltMax" style="display: none">
+                <label>Altura Maxima</label>
+                <input id="txtAltMax" type="text">
+            </div>
+            <div class="textBox" id="divAutonomia" style="display: none">
+                <label>Autonomia</label>
+                <input id="txtAutonomia" type="text">
+            </div>
+            <div class="textBox" id="divCantPue" style="display: none">
+                <label>Cantidad Puertas</label>
+                <input id="txtCantPue" type="text">
+            </div>
+            <div class="textBox" id="divCantRue" style="display: none">
+                <label>Cantidad Ruedas</label>
+                <input id="txtCantRue" type="text">
+            </div>
+        </div>
+
+        <div class="panelButtons">
+            <input class="button" id="btnAlta" type="button" value="Alta">
+            <input class="button" id="btnModificar" type="button" value="Modificar">
+            <input class="button" id="btnBaja" type="button" value="Baja">
+            <input class="button" id="btnCancelar" type="button" value="Cancelar">
+        </div>
+
+    </div>
+
+    <div id="formDatos">
+        <div class="panelDatosAlumno">
+            <label>Juan Pablo, Dongo Huaman</label>
+            <label>Labo III - Div. 3°C</label>
+            <label>Primer Parcial</label>
+        </div>
+
+        <div class="panelTitulo">
+            <label>Formulario Datos</label>
+        </div>
+
+        <div class="comboBox">
+            <label>Filtrar Por:</label>
+            <select id="comboxFiltrar">
+                <option value="todos" selected>Todos</option>
+                <option value="aereos">Aereos</option>
+                <option value="terrestres">Terrestres</option>
+            </select>
+        </div>
+
+        <div class="panelPromedio">
+            <label>Calcular Velocidad Maxima Promedio:</label>
+            <input id="txtVelMaxPromedio" type="text" readonly>
+            <button id="btnVelMaxPromedio">Calcular</button>
+        </div>
+        <div class="panelCheckBoxes">
+            <div class="checkBox">
+                <label>ID</label>
+                <input type="checkbox" id="chboxId" checked/>
+            </div>
+            <div class="checkBox">
+                <label>Modelo</label>
+                <input type="checkbox" id="chboxModelo" checked/>                
+            </div>
+            <div class="checkBox">
+                <label>Año Fab</label>
+                <input type="checkbox" id="chboxAnoFab" checked/>                
+            </div>
+            <div class="checkBox">
+                <label>Vel Max</label>
+                <input type="checkbox" id="chboxVelMax" checked/>
+            </div>
+            <div class="checkBox">
+                <label>Alt Max</label>
+                <input type="checkbox" id="chboxAltMax" checked/>
+            </div>
+            <div class="checkBox">
+                <label>Autonomia</label>
+                <input type="checkbox" id="chboxAutonomia" checked/>
+            </div>
+            <div class="checkBox">
+                <label>Cant Pue</label>
+                <input type="checkbox" id="chboxCantPue" checked/>
+            </div>
+            <div class="checkBox">
+                <label>Cant Rue</label>
+                <input type="checkbox" id="chboxCantRue" checked/>
+            </div>
+        </div>
+
+        <table id="tabla">
+            <tr>
+                <th>
+                    <button id="btnTablaId">ID</button>
+                </th>
+                <th>
+                    <button id="btnTablaModelo">Modelo</button>
+                </th>
+                <th>
+                    <button id="btnTablaAnoFab">Año Fab</button>
+                </th>
+                <th>
+                    <button id="btnTablaVelMax">Vel Max</button>
+                </th>
+                <th>
+                    <button id="btnTablaAltMax">Alt Max</button>
+                </th>
+                <th>
+                    <button id="btnTablaAutonomia">Autonomia</button>
+                </th>
+                <th>
+                    <button id="btnTablaCantPue">Cant Pue</button>
+                </th>
+                <th>
+                    <button id="btnTablaCantRue">Cant Rue</button>
+                </th>
+            </tr>
+        </table>
+        <button id="btnAgregar">Agregar</button>
+        <script src="PP.js"></script>
+    </div>
+</body>
+</html>
